@@ -11,6 +11,13 @@ from sympy.physics.quantum.cg import CG
 from sympy import S
 ###
 
+Be2uw = 35 #B(E2) weisskopf units
+A = 197  #Numero de nucleons
+lamb = 2 #multipolo 
+Z = 79 #numero de protons
+r0 = 1.06 #raio reduzido
+Ia = 1.5 #Spin inicial
+Ib = 0.5 #spin final
 
 def ClebshGordan (j1, m1, j2, m2, j3, m3):
   return (float(CG(S(2*j1)/2, S(2*m1)/2, S(2*j2)/2, S(2*m2)/2, j3, m3).doit()))
